@@ -1,6 +1,6 @@
 //1 
 function multiply(x) {
-    res = 1;
+    let res = 1;
     if (x) {
     for (let i = 0; i< arguments.length; i++) {
         res *= arguments[i];}
@@ -10,7 +10,7 @@ function multiply(x) {
 multiply(3,5,7);
 //2
 function reverseString(str) {
-    res = '';
+    let res = '';
     str = String(str);
     for (let i = str.length; i--;) {
         res += str[i];
@@ -24,7 +24,7 @@ console.log(res2);
 //3
 function getCodeStringFromText(str) {
     str = String(str);
-    res = '';
+    let res = '';
     for (let i = 0; i < str.length; i++) {
         res += str.charCodeAt(i) + ' ';
     }
